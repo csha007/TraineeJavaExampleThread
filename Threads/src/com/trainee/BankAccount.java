@@ -10,7 +10,7 @@ public class BankAccount {
 	}
 	
 	public synchronized double deposit(double amt){
-		
+		System.out.println("Changed once more");
 		balance = balance+amt;
 		System.out.println("Amount Deposited : "+balance);
 		notify();
